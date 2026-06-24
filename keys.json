@@ -14,6 +14,11 @@
       "sig": "8518642fc80dd099ba9a9cd1813183fd862a00df9b064a14694e686dbfd0308a",
       "user": "mogaming",
       "expires": "2027-12-31"
+    },
+    "ANKING-2055C406-8429-4147": {
+      "sig": "14e6e441779560480bf451626cce70ebfc65c98c07c88c653a22afde3483295a",
+      "user": "mogaming",
+      "expires": "2027-12-31"
     }
   }
 }
