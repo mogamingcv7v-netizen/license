@@ -3,7 +3,7 @@
 // Note: Original variable names lost to obfuscation
 
 const fs = require('fs'), path = require('path'), os = require('os'), crypto = require('crypto'), readline = require('readline'), {execSync, spawn} = require('child_process'), https = require('https');
-(os.platform() === 'win32' || os.platform() === 'darwin') && (console.log('\n  \x1B[38;2;255;107;107m\u2717 Android / Termux only. Desktop \u2192 use Launcher.bat\x1B[0m\n'), process.exit(1));
+// Desktop check bypassed
 const opts = {};
 opts.name = 'Meta AI';
 opts.icon = '\u25C6';
@@ -131,7 +131,8 @@ function verifyKeySig(_B, _C) {
 }
 function checkLicense(_G) {
   return new Promise((resolve, reject) => {
-    const _H = 'https://your-server.com/keys.json';
+    const _H = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/main/keys.json';
+    const opts9 = {};
     opts9.timeout = 15000;
     https.get(_H + ('?t=' + Date.now()), opts9, _I => {
       let _J = '';
