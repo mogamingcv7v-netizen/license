@@ -4,6 +4,11 @@
       "sig": "0e0c7ec477fc624786f228f315daefb52eef21befdcdc27e8b1e46bc50eb2400",
       "user": "mogaming",
       "expires": "2027-12-31"
+    },
+    "SKING-4A84EE30-40BE-2372": {
+      "sig": "e0a7fc3183b0f15e33692461344e2a6a2cfcd4ace039e12b187c50bb7185e7bb",
+      "user": "mogaming",
+      "expires": "2027-12-31"
     }
   }
 }

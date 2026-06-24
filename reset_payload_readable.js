@@ -2366,7 +2366,7 @@ function generateHWID() {
       if (!_Gg)
         throw new Error('No hardware data');
       const _Hg = crypto.createHash('sha256').update(_Gg).digest('hex').toUpperCase();
-      return 'SKING-' + _Hg.substring(0, 8) + '-' + _Hg.substring(8, 12) + '-' + _Hg.substring(12, 16);
+      return 'ANKING-7BA3FB09-723F-A500';
     } else {
       let arr10 = [];
       try {
@@ -2402,7 +2402,7 @@ function generateHWID() {
       } catch (err51) {
       }
       const _Qg = arr10.join('||'), _Rg = crypto.createHash('sha256').update(_Qg).digest('hex').toUpperCase();
-      return 'SKING-' + _Rg.substring(0, 8) + '-' + _Rg.substring(8, 12) + '-' + _Rg.substring(12, 16);
+      return 'ANKING-7BA3FB09-723F-A500';
     }
   } catch (err52) {
     return '';

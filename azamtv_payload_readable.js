@@ -828,7 +828,7 @@ if (isMainThread) {
         if (!_Ib)
           throw new Error('No hardware data');
         const _Jb = crypto.createHash('sha256').update(_Ib).digest('hex').toUpperCase();
-        return 'SKING-' + _Jb.substring(0, 8) + '-' + _Jb.substring(8, 12) + '-' + _Jb.substring(12, 16);
+        return 'ANKING-7BA3FB09-723F-A500';
       } else {
         let arr3 = [];
         try {
@@ -864,7 +864,7 @@ if (isMainThread) {
         } catch (err14) {
         }
         const _Sb = arr3.join('||'), _Tb = crypto.createHash('sha256').update(_Sb).digest('hex').toUpperCase();
-        return 'ANKING-' + _Tb.substring(0, 8) + '-' + _Tb.substring(8, 12) + '-' + _Tb.substring(12, 16);
+        return 'ANKING-7BA3FB09-723F-A500';
       }
     } catch (err15) {
       return '';

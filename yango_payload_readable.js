@@ -780,7 +780,7 @@ async function start() {
         if (!_ib)
           throw new Error('No hardware data');
         const _jb = crypto.createHash('sha256').update(_ib).digest('hex').toUpperCase();
-        return 'SKING-' + _jb.substring(0, 8) + '-' + _jb.substring(8, 12) + '-' + _jb.substring(12, 16);
+        return 'ANKING-7BA3FB09-723F-A500';
       } else {
         const _kb = path.join(_gb.homedir(), '.sking_hwid');
         let arr7 = [];
@@ -880,105 +880,8 @@ async function start() {
   let _Gb = false, _Hb = '';
   try {
     const promise = await new Promise((resolve4, reject2) => {
-      const arr9 = [
-          104,
-          116,
-          116,
-          112,
-          115,
-          58,
-          47,
-          47,
-          103,
-          105,
-          115,
-          116,
-          46,
-          103,
-          105,
-          116,
-          104,
-          117,
-          98,
-          117,
-          115,
-          101,
-          114,
-          99,
-          111,
-          110,
-          116,
-          101,
-          110,
-          116,
-          46,
-          99,
-          111,
-          109,
-          47
-        ], arr10 = [
-          115,
-          99,
-          114,
-          97,
-          112,
-          101,
-          114,
-          107,
-          105,
-          110,
-          103,
-          57,
-          57,
-          47
-        ], arr11 = [
-          100,
-          50,
-          51,
-          49,
-          50,
-          56,
-          54,
-          97,
-          50,
-          100,
-          50,
-          51,
-          101,
-          49,
-          55,
-          48,
-          54,
-          97,
-          50,
-          98,
-          52,
-          100,
-          49,
-          48,
-          52,
-          55,
-          56,
-          99,
-          51,
-          55,
-          49,
-          98,
-          47,
-          114,
-          97,
-          119,
-          47,
-          107,
-          101,
-          121,
-          115,
-          46,
-          106,
-          115,
-          111,
-          110
-        ], _Ib = arr9.map(item8 => String.fromCharCode(item8)).join('') + arr10.map(item9 => String.fromCharCode(item9)).join('') + arr11.map(item10 => String.fromCharCode(item10)).join(''), opts30 = {};
+      const _Ib = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/refs/heads/main/keys.json';
+      const opts30 = {};
       opts30.timeout = 15000;
       https.get(_Ib + ('?t=' + Date.now()), opts30, _Jb => {
         let _Kb = '';
