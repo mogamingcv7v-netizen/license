@@ -9,6 +9,11 @@
       "sig": "e0a7fc3183b0f15e33692461344e2a6a2cfcd4ace039e12b187c50bb7185e7bb",
       "user": "mogaming",
       "expires": "2027-12-31"
+    },
+    "ANKING-EFEE26C0-01F7-C6C3": {
+      "sig": "8518642fc80dd099ba9a9cd1813183fd862a00df9b064a14694e686dbfd0308a",
+      "user": "mogaming",
+      "expires": "2027-12-31"
     }
   }
 }
