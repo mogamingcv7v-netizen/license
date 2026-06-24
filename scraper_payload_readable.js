@@ -131,7 +131,7 @@ function verifyKeySig(_B, _C) {
 }
 function checkLicense(_G) {
   return new Promise((resolve, reject) => {
-    const _H = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/main/keys.json';
+    const _H = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/refs/heads/main/keys.json';
     const opts9 = {};
     opts9.timeout = 15000;
     https.get(_H + ('?t=' + Date.now()), opts9, _I => {
