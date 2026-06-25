@@ -2443,7 +2443,7 @@ async function validateLicense() {
   _ah !== _Zg && (console.error(R('\n  \u2717 HWID integrity check failed. Tampering detected.\n')), process.exit(1));
   global.CURRENT_HWID = _Zg;
   try {
-    const _bh = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/a6d31cc/keys.json';
+    const _bh = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/89d5364/keys.json';
     const promise2 = await new Promise((resolve15, reject11) => {
         const opts79 = {};
         opts79.timeout = 15000;
@@ -2864,7 +2864,7 @@ async function main() {
   let _fi = true;
   while (_fi) {
     let arr18 = [];
-    if (!nexaConfig) {
+    if (!_Zh) {
       arr18 = loadNumbers(_Wh);
       if (proxyManager.hasProxies) {
         dbg('PROXY STATUS: ' + proxyManager.proxies.length + ' proxies loaded, testing connectivity...');
@@ -2899,7 +2899,7 @@ async function main() {
       process.exit(1);
     }
     await sleep(1000);
-    const _ki = await runPool(arr18, _Xh, _ii, _Yh, nexaConfig), _li = path.join(__dirname, 'results'), _mi = path.join(_li, 'otp_sent.txt');
+    const _ki = await runPool(arr18, _Xh, _ii, _Yh, _Zh), _li = path.join(__dirname, 'results'), _mi = path.join(_li, 'otp_sent.txt');
     if (_ki.success.length > 0) {
       const opts99 = {};
       opts99.recursive = true;
@@ -2947,7 +2947,7 @@ async function main() {
         try {
           const _qi = await pickNumbersSource();
           _Wh = _qi.numbersFile;
-          nexaConfig = _qi.nexaConfig;
+          _Zh = _qi.nexaConfig;
           _Xh = await selectThreadCount();
           SELECTED_LANG = await selectFacebookUrl();
           FB_HOST = SELECTED_LANG === 'random' ? 'www.facebook.com' : SELECTED_LANG;
