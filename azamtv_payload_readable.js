@@ -870,7 +870,8 @@ if (isMainThread) {
       return '';
     }
   }
-  function verifyKeySig(_Ub, _Vb) {
+  async function verifyKeySig(_Ub, _Vb) {
+    try {
     const _Wb = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/502cb5f/keys.json', opts39 = {};
         opts39.timeout = 15000;
         https.get(_fc + ('?t=' + Date.now()), opts39, _gc => {
@@ -887,7 +888,6 @@ if (isMainThread) {
           this.destroy();
           reject4(new Error('Timeout'));
         });
-      });
       if (promise && promise.keys) {
         const _jc = promise.keys[_bc];
         if (!_jc) {

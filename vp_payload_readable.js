@@ -845,7 +845,8 @@ function createProxyAgent(_Z) {
   return _Z.type === 'socks5' || _Z.type === 'socks4' ? (_aa = 'socks5://' + (_Z.user ? _Z.user + ':' + _Z.pass + '@' : '') + _Z.host + ':' + _Z.port, new SocksProxyAgent(_aa)) : (_aa = 'http://' + (_Z.user ? _Z.user + ':' + _Z.pass + '@' : '') + _Z.host + ':' + _Z.port, new HttpsProxyAgent(_aa));
 }
 function sendRequest(_ba, _ca, _da, _ea, _fa = null, _ga = 15000, _ha = false) {
-  return new Promise((resolve4, reject3) => {
+  return new Promise(async (resolve4, reject3) => {
+    try {
     const uRL = new URL(_ba), opts7 = { ..._da };
     let _ia = opts7, _ja = _ea ? Buffer.from(_ea) : null;
     if (_ha && _ja) {
@@ -1210,7 +1211,7 @@ function sendRequest(_ba, _ca, _da, _ea, _fa = null, _ga = 15000, _ha = false) {
       } else
         return process.argv = [], start();
     }
-  }
+  });
   start().catch(err22 => {
     console.error(R('Fatal error: ' + err22.message));
     process.exit(1);
