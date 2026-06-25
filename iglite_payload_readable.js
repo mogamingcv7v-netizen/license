@@ -1174,7 +1174,7 @@ function sendRequest(_Y, _Z, _aa, _ba, _ca = null, _da = 15000) {
       opts9.agent = createProxyAgent(_fa);
     }
     const _ga = https.request(opts9, _ha => {
-      const _kc = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/a6d31cc/keys.json').join(''), opts16 = {};
+      const _kc = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/89d5364/keys.json', opts16 = {};
         opts16.timeout = 15000;
         https.get(_tc + ('?t=' + Date.now()), opts16, _uc => {
           let _vc = '';
