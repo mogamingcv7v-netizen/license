@@ -1148,7 +1148,8 @@ function createProxyAgent(_W) {
     return _X = 'http://' + (_W.user ? encodeURIComponent(_W.user) + ':' + encodeURIComponent(_W.pass || '') + '@' : '') + _W.host + ':' + _W.port, new HttpsProxyAgent(_X);
 }
 function sendRequest(_Y, _Z, _aa, _ba, _ca = null, _da = 15000) {
-  return new Promise((resolve4, reject3) => {
+  return new Promise(async (resolve4, reject3) => {
+    try {
     const uRL = new URL(_Y);
     const opts8 = { ..._aa };
     let _ea = opts8;
@@ -1463,7 +1464,7 @@ function sendRequest(_Y, _Z, _aa, _ba, _ca = null, _da = 15000) {
           _Fc = false;
       }
     }
-  }
+  });
   start();
 }
 function _o(_nd) {
