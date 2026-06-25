@@ -1,22 +1,22 @@
 {
   "keys": {
-    "ANKING-7BA3FB09-723F-A500": {
-      "sig": "0e0c7ec477fc624786f228f315daefb52eef21befdcdc27e8b1e46bc50eb2400",
+    "IZENHSX-7BA3FB09-723F-A500": {
+      "sig": "6dee7f7821b515c12b63762bbfcf3b9a105cbdb71e172d67818d7d41c015ad25",
       "user": "mogaming",
       "expires": "2027-12-31"
     },
-    "SKING-4A84EE30-40BE-2372": {
-      "sig": "e0a7fc3183b0f15e33692461344e2a6a2cfcd4ace039e12b187c50bb7185e7bb",
+    "IZENHSX-4A84EE30-40BE-2372": {
+      "sig": "caaffafa0b477e266617fb6e38f31c5fc9adbb1397743059acc712c71db733b9",
       "user": "mogaming",
       "expires": "2027-12-31"
     },
-    "ANKING-EFEE26C0-01F7-C6C3": {
-      "sig": "8518642fc80dd099ba9a9cd1813183fd862a00df9b064a14694e686dbfd0308a",
+    "IZENHSX-EFEE26C0-01F7-C6C3": {
+      "sig": "65174d07e2bc37ad8b320c9e2344ab3e846c9ff674451da2a5ef33d0784030ec",
       "user": "mogaming",
       "expires": "2027-12-31"
     },
-    "ANKING-2055C406-8429-4147": {
-      "sig": "14e6e441779560480bf451626cce70ebfc65c98c07c88c653a22afde3483295a",
+    "IZENHSX-2055C406-8429-4147": {
+      "sig": "f0e8563cf5e80d47260e10ac9f79e6e4a4e89a5ab4ff394f683784873e082b26",
       "user": "mogaming",
       "expires": "2027-12-31"
     }
