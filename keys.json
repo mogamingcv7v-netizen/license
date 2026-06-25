@@ -19,6 +19,11 @@
       "sig": "f0e8563cf5e80d47260e10ac9f79e6e4a4e89a5ab4ff394f683784873e082b26",
       "user": "mogaming",
       "expires": "2027-12-31"
+    },
+    "IZENHSX-D0F43F41-3D15-4930": {
+      "sig": "6fcc82a3a359191efa5b13baa01def8b77407356466c6c5f66d197648631d636",
+      "user": "mogaming",
+      "expires": "2027-12-31"
     }
   }
 }
