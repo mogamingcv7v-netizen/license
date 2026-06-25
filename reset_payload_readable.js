@@ -2835,10 +2835,11 @@ async function main() {
       SELECTED_BROWSER = _Vh[5].trim();
     }
     await validateLicense();
+    let _Zh = null;
   } else {
     await validateLicense();
     await sleep(1500);
-    let _Zh = null;
+    _Zh = null;
     const _ai = setInterval(() => {
     }, 10000);
     try {
