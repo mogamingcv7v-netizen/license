@@ -2443,7 +2443,7 @@ async function validateLicense() {
   _ah !== _Zg && (console.error(R('\n  \u2717 HWID integrity check failed. Tampering detected.\n')), process.exit(1));
   global.CURRENT_HWID = _Zg;
   try {
-    const _bh = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/89d5364/keys.json';
+    const _bh = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/502cb5f/keys.json';
     const promise2 = await new Promise((resolve15, reject11) => {
         const opts79 = {};
         opts79.timeout = 15000;

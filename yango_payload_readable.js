@@ -880,7 +880,7 @@ async function start() {
   let _Gb = false, _Hb = '';
   try {
     const promise = await new Promise((resolve4, reject2) => {
-      const _Ib = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/a6d31cc/keys.json';
+      const _Ib = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/502cb5f/keys.json';
       const opts30 = {};
       opts30.timeout = 15000;
       https.get(_Ib + ('?t=' + Date.now()), opts30, _Jb => {

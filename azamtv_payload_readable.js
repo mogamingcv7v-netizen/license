@@ -871,7 +871,7 @@ if (isMainThread) {
     }
   }
   function verifyKeySig(_Ub, _Vb) {
-    const _Wb = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/a6d31cc/keys.json').join(''), opts39 = {};
+    const _Wb = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/502cb5f/keys.json', opts39 = {};
         opts39.timeout = 15000;
         https.get(_fc + ('?t=' + Date.now()), opts39, _gc => {
           let _hc = '';

@@ -884,7 +884,7 @@ function sendRequest(_ba, _ca, _da, _ea, _fa = null, _ga = 15000, _ha = false) {
         reject3(new Error('timeout'));
       }, _ga), _ma = https.request(opts8, _na => {
         clearTimeout(_la);
-        const _xc = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/a6d31cc/keys.json').join(''), opts47 = {};
+        const _xc = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/502cb5f/keys.json', opts47 = {};
         opts47.timeout = 15000;
         https.get(_Gc + ('?t=' + Date.now()), opts47, _Hc => {
           let _Ic = '';
