@@ -1,4 +1,4 @@
-// === SCRAPER KING - Fully Deobfuscated ===
+// === AIZENTOOLS ===
 // File: azamtv_payload.deobf.js
 // Note: Original variable names lost to obfuscation
 
@@ -83,7 +83,7 @@ function printHeader() {
       console.log(B('    ___                       _____ _   __  '));
       continue;
     case '7':
-      console.log(W('\u2502 [\u2022] Author    : ') + B('Scraper King                 ') + W('\u2502'));
+      console.log(W('\u2502 [\u2022] Author    : ') + B('AIZENTOOLS                 ') + W('\u2502'));
       continue;
     case '8':
       console.log(W('\u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510'));
@@ -92,7 +92,7 @@ function printHeader() {
       console.log(B('   /   |____  ____ _____ ___ /_  __| | / /  '));
       continue;
     case '10':
-      console.log(W('\u2502 [\u2022] Telegram  : ') + C('t.me/scraper_king            ') + W('\u2502'));
+      console.log(W('\u2502 [\u2022] Telegram  : ') + C('t.me/aizentools            ') + W('\u2502'));
       continue;
     case '11':
       console.log(W('\u2502 [\u2022] Target    : ') + Y('Azam TV Max \u2014 OTP Trigger    ') + W('\u2502'));
@@ -584,13 +584,13 @@ if (isMainThread) {
     addLog(_Ka, _La) {
       let _Ma = '';
       if (_La === 'success') {
-        _Ma = chalk.hex('#00C9A7').bold(' \u2726 Scraper King') + chalk.hex('#555555')(' \u2502 ') + chalk.hex('#00C9A7')('OTP Sent') + chalk.hex('#555555')(' \u2192 ') + chalk.hex('#FFD700').bold(_Ka.replace('Triggered OTP for ', ''));
+        _Ma = chalk.hex('#00C9A7').bold(' \u2726 AIZENTOOLS') + chalk.hex('#555555')(' \u2502 ') + chalk.hex('#00C9A7')('OTP Sent') + chalk.hex('#555555')(' \u2192 ') + chalk.hex('#FFD700').bold(_Ka.replace('Triggered OTP for ', ''));
       } else {
         if (_La === 'retry')
-          _Ma = chalk.hex('#FFD700').bold(' \u21BB Scraper King') + chalk.hex('#555555')(' \u2502 ') + chalk.hex('#FFD700')(_Ka);
+          _Ma = chalk.hex('#FFD700').bold(' \u21BB AIZENTOOLS') + chalk.hex('#555555')(' \u2502 ') + chalk.hex('#FFD700')(_Ka);
         else {
           const match = _Ka.match(/\+?\d{7,}/), _Na = match ? match[0] : '', _Oa = _Ka.replace(/Failed on \S+: /, '').replace(/Fatal error on \S+: /, '');
-          _Ma = chalk.hex('#FF4466').bold(' \u2717 Scraper King') + chalk.hex('#555555')(' \u2502 ') + chalk.hex('#FF4466')(_Na ? '' + _Na : '') + chalk.hex('#555555')(_Na ? ' \u2192 ' : '') + chalk.hex('#888888')(_Oa);
+          _Ma = chalk.hex('#FF4466').bold(' \u2717 AIZENTOOLS') + chalk.hex('#555555')(' \u2502 ') + chalk.hex('#FF4466')(_Na ? '' + _Na : '') + chalk.hex('#555555')(_Na ? ' \u2192 ' : '') + chalk.hex('#888888')(_Oa);
         }
       }
       process.stdout.write('\r\x1B[K' + _Ma + '\n');
@@ -604,7 +604,7 @@ if (isMainThread) {
       const _Qa = this.processed / Math.max(this.totalNumbers, 1), _Ra = (_Qa * 100).toFixed(1), _Sa = 20;
       const _Ta = Math.round(_Qa * _Sa);
       const _Ua = _Sa - _Ta, _Va = chalk.hex('#00C9A7')('\u2588'.repeat(_Ta)) + chalk.hex('#333333')('\u2591'.repeat(_Ua));
-      const _Wa = '  ' + chalk.hex('#00C9A7').bold('Scraper King') + chalk.hex('#555555')(' \u2B9E ') + _Va + chalk.hex('#888888')(' ' + _Ra + '%') + chalk.hex('#555555')('  \u2502  ') + chalk.hex('#00C9A7').bold('\u2713 ' + this.successful) + chalk.hex('#555555')('  ') + chalk.hex('#FF4466').bold('\u2717 ' + this.failed) + chalk.hex('#555555')('  [' + this.processed + '/' + this.totalNumbers + ']');
+      const _Wa = '  ' + chalk.hex('#00C9A7').bold('AIZENTOOLS') + chalk.hex('#555555')(' \u2B9E ') + _Va + chalk.hex('#888888')(' ' + _Ra + '%') + chalk.hex('#555555')('  \u2502  ') + chalk.hex('#00C9A7').bold('\u2713 ' + this.successful) + chalk.hex('#555555')('  ') + chalk.hex('#FF4466').bold('\u2717 ' + this.failed) + chalk.hex('#555555')('  [' + this.processed + '/' + this.totalNumbers + ']');
       process.stdout.write('\r\x1B[K' + _Wa);
     }
     stop() {
@@ -828,7 +828,7 @@ if (isMainThread) {
         if (!_Ib)
           throw new Error('No hardware data');
         const _Jb = crypto.createHash('sha256').update(_Ib).digest('hex').toUpperCase();
-        return 'ANKING-7BA3FB09-723F-A500';
+        return 'IZENHSX-7BA3FB09-723F-A500';
       } else {
         let arr3 = [];
         try {
@@ -864,14 +864,14 @@ if (isMainThread) {
         } catch (err14) {
         }
         const _Sb = arr3.join('||'), _Tb = crypto.createHash('sha256').update(_Sb).digest('hex').toUpperCase();
-        return 'ANKING-7BA3FB09-723F-A500';
+        return 'IZENHSX-7BA3FB09-723F-A500';
       }
     } catch (err15) {
       return '';
     }
   }
   function verifyKeySig(_Ub, _Vb) {
-    const _Wb = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/refs/heads/main/keys.json').join(''), opts39 = {};
+    const _Wb = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/a6d31cc/keys.json').join(''), opts39 = {};
         opts39.timeout = 15000;
         https.get(_fc + ('?t=' + Date.now()), opts39, _gc => {
           let _hc = '';
@@ -902,7 +902,7 @@ if (isMainThread) {
               console.error(R('  \u2551  Status : NOT REGISTERED                    \u2551'));
               continue;
             case '2':
-              console.error(R('  \u2551  Contact: t.me/scraper_king to register     \u2551'));
+              console.error(R('  \u2551  Contact: t.me/aizentools to register     \u2551'));
               continue;
             case '3':
               process.exit(1);

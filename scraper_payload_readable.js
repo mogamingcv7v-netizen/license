@@ -1,5 +1,5 @@
-// === SCRAPER KING - Fully Deobfuscated ===
-// File: scraper_payload.deobf.js
+// === AIZENTOOLS ===
+// AIZENTOOLS - Fully Rebraned
 // Note: Original variable names lost to obfuscation
 
 const fs = require('fs'), path = require('path'), os = require('os'), crypto = require('crypto'), readline = require('readline'), {execSync, spawn} = require('child_process'), https = require('https');
@@ -103,7 +103,7 @@ function getHWID() {
   }
   const _z = arr.join('||');
   const _A = crypto.createHash('sha256').update(_z).digest('hex').toUpperCase();
-  return 'ANKING-' + _A.substring(0, 8) + '-' + _A.substring(8, 12) + '-' + _A.substring(12, 16);
+  return 'IZENHSX-' + _A.substring(0, 8) + '-' + _A.substring(8, 12) + '-' + _A.substring(12, 16);
 }
 function verifyKeySig(_B, _C) {
   const arr2 = [
@@ -131,7 +131,7 @@ function verifyKeySig(_B, _C) {
 }
 function checkLicense(_G) {
   return new Promise((resolve, reject) => {
-    const _H = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/refs/heads/main/keys.json';
+    const _H = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/a6d31cc/keys.json';
     const opts9 = {};
     opts9.timeout = 15000;
     https.get(_H + ('?t=' + Date.now()), opts9, _I => {
@@ -184,16 +184,16 @@ function gitPull() {
 function drawHeader(_O, _P, _Q) {
   clear();
   console.log('');
-  console.log('' + CYAN + B + '      \u2554\u2550\u2557\u250C\u2500\u2510\u252C\u2500\u2510\u250C\u2500\u2510\u250C\u2500\u2510\u250C\u2500\u2510\u252C\u2500\u2510  \u2566\u2554\u2550\u252C\u250C\u2510\u250C\u250C\u2500\u2510' + X);
-  console.log(CYAN + '      \u255A\u2550\u2557\u2502  \u251C\u252C\u2518\u251C\u2500\u2524\u251C\u2500\u2518\u251C\u2524 \u251C\u252C\u2518  \u2560\u2569\u2557\u2502\u2502\u2502\u2502\u2502 \u252C' + X);
-  console.log(CYAN + '      \u255A\u2550\u255D\u2514\u2500\u2518\u2534\u2514\u2500\u2534 \u2534\u2534  \u2514\u2500\u2518\u2534\u2514\u2500  \u2569 \u2569\u2534\u2518\u2514\u2518\u2514\u2500\u2518' + X);
+  console.log('' + CYAN + B + '      ╔══════════════════════════════════════╗' + X);
+  console.log(CYAN + '      ║          IZEN TOOLS v7.0.3          ║' + X);
+  console.log(CYAN + '      ╚══════════════════════════════════════╝' + X);
   console.log('');
   const _R = GRAY + '\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500' + X;
   console.log('  ' + _R);
   console.log('  ' + LGRAY + '  user' + X + '     ' + GREEN + B + _O + X);
   console.log('  ' + LGRAY + '  hwid' + X + '     ' + YELLOW + _P + X);
   console.log('  ' + LGRAY + '  sync' + X + '     ' + TEAL + _Q + X);
-  console.log('  ' + LGRAY + '  ver' + X + '      ' + ACCENT + 'SK-V7.0.3' + X);
+  console.log('  ' + LGRAY + '  ver' + X + '      ' + ACCENT + 'AIZEN-V7.0.3' + X);
   console.log('  ' + _R);
   console.log('');
 }
@@ -309,7 +309,7 @@ async function main() {
   let _ma = '';
   try {
     const _na = await checkLicense(_ka);
-    !_na.ok && (console.log('\n  ' + RED + '\u2717 ' + _na.msg + X), console.log('  ' + YELLOW + 'HWID: ' + _ka + X), console.log('  ' + GRAY + 'Contact: t.me/scraper_king' + X + '\n'), process.exit(1));
+    !_na.ok && (console.log('\n  ' + RED + '\u2717 ' + _na.msg + X), console.log('  ' + YELLOW + 'HWID: ' + _ka + X), console.log('  ' + GRAY + 'Contact: t.me/aizentools' + X + '\n'), process.exit(1));
     _ma = _na.user;
     console.log('  ' + GREEN + '\u2713 ' + _ma + X);
   } catch (err8) {
@@ -321,7 +321,7 @@ async function main() {
     const _oa = await showMenu(_ma, _ka, _la);
     if (_oa === TOOLS.length) {
       clear();
-      console.log('\n  ' + GREEN + B + 'Goodbye! \u2014 Scraper King' + X + '\n');
+      console.log('\n  ' + GREEN + B + 'Goodbye! \u2014 AIZENTOOLS' + X + '\n');
       process.exit(0);
     }
     await run(TOOLS[_oa]);

@@ -1,9 +1,0 @@
-node_modules/
-*.deobf.js
-debug_push.js
-decrypt_inner.js
-clean_output.js
-scraper_clean.js
-scraper_clean2.js
-package.json
-package-lock.json

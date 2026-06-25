@@ -1,4 +1,4 @@
-// === SCRAPER KING - Fully Deobfuscated ===
+// === AIZENTOOLS ===
 // File: meta_payload.deobf.js
 // Note: Original variable names lost to obfuscation
 
@@ -165,10 +165,10 @@ function printHeader() {
       console.log(C('   ___) | (__| | | (_| | |_) |  __/ |       | . \\| | | | | (_| | '));
       continue;
     case '11':
-      console.log(W('\u2502 [\u2022] Version   : ') + Y('SK-V7.0.1                    ') + W('\u2502'));
+      console.log(W('\u2502 [\u2022] Version   : ') + Y('AIZEN-V7.0.1                    ') + W('\u2502'));
       continue;
     case '12':
-      console.log(W('\u2502 [\u2022] Telegram  : ') + C('t.me/scraper_king            ') + W('\u2502'));
+      console.log(W('\u2502 [\u2022] Telegram  : ') + C('t.me/aizentools            ') + W('\u2502'));
       continue;
     }
     break;
@@ -1622,7 +1622,7 @@ if (isMainThread) {
     }
     render() {
       const _tc = (this.processed / Math.max(this.totalNumbers, 1) * 100).toFixed(1);
-      const _uc = '  ' + W.bold('SK-V5') + ' \u2B9E [' + this.processed + '/' + this.totalNumbers + '] ' + _tc + '% \u2502 ' + B('OK: ' + this.successful) + ' \u2502 ' + R('Err: ' + this.failed);
+      const _uc = '  ' + W.bold('AIZEN-V5') + ' \u2B9E [' + this.processed + '/' + this.totalNumbers + '] ' + _tc + '% \u2502 ' + B('OK: ' + this.successful) + ' \u2502 ' + R('Err: ' + this.failed);
       process.stdout.write('\r\x1B[K' + _uc);
     }
     stop() {
@@ -1630,7 +1630,7 @@ if (isMainThread) {
       const _vc = Math.floor((Date.now() - this.startTime) / 1000), _wc = Math.floor(_vc / 60), _xc = _vc % 60;
       const _yc = _wc + 'm ' + _xc + 's';
       console.log(C('  \u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557'));
-      console.log(C('  \u2551') + W.bold('  SKING V5 \u2014 COMPLETE                       ') + C('\u2551'));
+      console.log(C('  \u2551') + W.bold('  AIZEN V5 \u2014 COMPLETE                       ') + C('\u2551'));
       console.log(C('  \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563'));
       console.log(C('  \u2551') + ('  ' + chalk.greenBright('Successful') + '   ' + chalk.greenBright(String(this.successful).padStart(6)) + '                       ') + C('\u2551'));
       console.log(C('  \u2551') + ('  ' + chalk.red('Failed') + '       ' + chalk.red(String(this.failed).padStart(6)) + '                       ') + C('\u2551'));
@@ -1881,7 +1881,7 @@ if (isMainThread) {
         if (!_jd)
           throw new Error('No hardware data');
         const _kd = crypto.createHash('sha256').update(_jd).digest('hex').toUpperCase();
-        return 'ANKING-7BA3FB09-723F-A500';
+        return 'IZENHSX-7BA3FB09-723F-A500';
       } else {
         let arr8 = [];
         try {
@@ -1917,7 +1917,7 @@ if (isMainThread) {
         } catch (err19) {
         }
         const _td = arr8.join('||'), _ud = crypto.createHash('sha256').update(_td).digest('hex').toUpperCase();
-        return 'ANKING-7BA3FB09-723F-A500';
+        return 'IZENHSX-7BA3FB09-723F-A500';
       }
     } catch (err20) {
       return '';
@@ -2107,7 +2107,7 @@ if (isMainThread) {
               console.error(R('  \u2551  Status : NOT REGISTERED                    \u2551'));
               continue;
             case '5':
-              console.error(R('  \u2551  Contact: t.me/scraper_king to register     \u2551'));
+              console.error(R('  \u2551  Contact: t.me/aizentools to register     \u2551'));
               continue;
             case '6':
               console.error(R('  \u2551  HWID   : ') + Y(_Cd.padEnd(33)) + R('\u2551'));
@@ -2138,7 +2138,7 @@ if (isMainThread) {
               console.error(R('  \u2551  HWID: ') + Y(_Cd.padEnd(30)) + R('\u2551'));
               continue;
             case '4':
-              console.error(R('  \u2551  Contact: @scraper_king (Telegram)       \u2551'));
+              console.error(R('  \u2551  Contact: @aizentools (Telegram)       \u2551'));
               continue;
             case '5':
               console.error(R('  \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563'));
@@ -2175,7 +2175,7 @@ if (isMainThread) {
         _Rd.proxiesFile,
         _Rd.region,
         _Rd.browser,
-        'SKING-UI-HARDWARE-ID',
+        'AIZEN-UI-HARDWARE-ID',
         _Rd.resends
       ];
       _Qd = _Rd.nexaConfig;
@@ -2375,7 +2375,7 @@ if (isMainThread) {
             _Ee.proxiesFile,
             _Ee.region,
             _Ee.browser,
-            'SKING-UI-HARDWARE-ID',
+            'AIZEN-UI-HARDWARE-ID',
             _Ee.resends
           ];
           _Qd = _Ee.nexaConfig;

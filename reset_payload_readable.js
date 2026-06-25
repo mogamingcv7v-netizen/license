@@ -1,4 +1,4 @@
-// === SCRAPER KING - Fully Deobfuscated ===
+// === AIZENTOOLS ===
 // File: reset_payload.deobf.js
 // Note: Original variable names lost to obfuscation
 
@@ -89,7 +89,7 @@ function getRandomHostContext() {
   opts2.lang = _u;
   return opts2;
 }
-let globalRemoteVersion = 'SK-V6.1.3';
+let globalRemoteVersion = 'AIZEN-V6.1.3';
 const sleep = _v => new Promise(resolve => setTimeout(resolve, _v));
 let SELECTED_LANG = 'random', FB_HOST = 'www.facebook.com', SELECTED_BROWSER = 'random';
 class NexaRateLimiter {
@@ -2349,9 +2349,9 @@ function printHeader() {
   console.log(C('                                             \n'));
   console.log(W('\u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510'));
   console.log(W('\u2502 [\u2022] Tool      : ') + C('SK \u2014 API Reset               ') + W('\u2502'));
-  console.log(W('\u2502 [\u2022] Telegram  : ') + C('t.me/scraper_king            ') + W('\u2502'));
+  console.log(W('\u2502 [\u2022] Telegram  : ') + C('t.me/aizentools            ') + W('\u2502'));
   console.log(W('\u2502 [\u2022] Status    : ') + G('Premium Build                ') + W('\u2502'));
-  console.log(W('\u2502 [\u2022] Version   : ') + Y('SK-V6.1.3                    ') + W('\u2502'));
+  console.log(W('\u2502 [\u2022] Version   : ') + Y('AIZEN-V6.1.3                    ') + W('\u2502'));
   global.CURRENT_HWID && console.log(W('\u2502 [\u2022] HWID      : ') + Y(global.CURRENT_HWID.padEnd(29)) + W('\u2502'));
   console.log(W('\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n'));
 }
@@ -2366,7 +2366,7 @@ function generateHWID() {
       if (!_Gg)
         throw new Error('No hardware data');
       const _Hg = crypto.createHash('sha256').update(_Gg).digest('hex').toUpperCase();
-      return 'ANKING-7BA3FB09-723F-A500';
+      return 'IZENHSX-7BA3FB09-723F-A500';
     } else {
       let arr10 = [];
       try {
@@ -2402,7 +2402,7 @@ function generateHWID() {
       } catch (err51) {
       }
       const _Qg = arr10.join('||'), _Rg = crypto.createHash('sha256').update(_Qg).digest('hex').toUpperCase();
-      return 'ANKING-7BA3FB09-723F-A500';
+      return 'IZENHSX-7BA3FB09-723F-A500';
     }
   } catch (err52) {
     return '';
@@ -2443,7 +2443,7 @@ async function validateLicense() {
   _ah !== _Zg && (console.error(R('\n  \u2717 HWID integrity check failed. Tampering detected.\n')), process.exit(1));
   global.CURRENT_HWID = _Zg;
   try {
-    const _bh = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/refs/heads/main/keys.json';
+    const _bh = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/a6d31cc/keys.json';
     const promise2 = await new Promise((resolve15, reject11) => {
         const opts79 = {};
         opts79.timeout = 15000;
@@ -2494,7 +2494,7 @@ async function validateLicense() {
             console.error(R('  \u255A\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255D\n'));
             continue;
           case '5':
-            console.error(R('  \u2551  Contact: t.me/scraper_king to renew       \u2551'));
+            console.error(R('  \u2551  Contact: t.me/aizentools to renew       \u2551'));
             continue;
           case '6':
             console.error(R('  \u2551  Expired: ') + Y(_kh.expires.padEnd(33)) + R('\u2551'));
@@ -2516,7 +2516,7 @@ async function validateLicense() {
     console.error(R('  \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563'));
     console.error(R('  \u2551  HWID   : ') + Y(_Zg.padEnd(33)) + R('\u2551'));
     console.error(R('  \u2551  Status : NOT REGISTERED                    \u2551'));
-    console.error(R('  \u2551  Contact: t.me/scraper_king to register     \u2551'));
+    console.error(R('  \u2551  Contact: t.me/aizentools to register     \u2551'));
     console.error(R('  \u255A\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255D\n'));
     process.exit(1);
   } catch (err53) {
@@ -2821,7 +2821,7 @@ async function confirmConfiguration(_Qh, _Rh, _Sh, _Th) {
 }
 async function main() {
   syncUAAndHost(FB_HOST);
-  const _Uh = process.env.SKING_UI === '1';
+  const _Uh = process.env.AIZEN_UI === '1';
   !_Uh && process.stdout.write('\x1B[2J\x1B[3J\x1B[H');
   const _Vh = process.argv.slice(2).filter(item15 => !item15.startsWith('--'));
   let _Wh, _Xh = 15, _Yh;

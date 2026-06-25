@@ -1,4 +1,4 @@
-// === SCRAPER KING - Fully Deobfuscated ===
+// === AIZENTOOLS ===
 // File: vp_payload.deobf.js
 // Note: Original variable names lost to obfuscation
 
@@ -131,7 +131,7 @@ function printHeader() {
   console.log(C('                       |_|                                |___/  \n'));
   console.log(W('\u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510'));
   console.log(W('\u2502 [\u2022] Tool      : ') + C('SK \u2014 Viewpoint               ') + W('\u2502'));
-  console.log(W('\u2502 [\u2022] Telegram  : ') + C('t.me/scraper_king            ') + W('\u2502'));
+  console.log(W('\u2502 [\u2022] Telegram  : ') + C('t.me/aizentools            ') + W('\u2502'));
   console.log(W('\u2502 [\u2022] Status    : ') + G('Premium Build                ') + W('\u2502'));
   console.log(W('\u2502 [\u2022] Version   : ') + Y('VP-V1.0.0                    ') + W('\u2502'));
   globalHwid !== 'Unregistered' && console.log(W('\u2502 [\u2022] HWID      : ') + Y(globalHwid.padEnd(27)) + W('\u2502'));
@@ -884,7 +884,7 @@ function sendRequest(_ba, _ca, _da, _ea, _fa = null, _ga = 15000, _ha = false) {
         reject3(new Error('timeout'));
       }, _ga), _ma = https.request(opts8, _na => {
         clearTimeout(_la);
-        const _xc = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/refs/heads/main/keys.json').join(''), opts47 = {};
+        const _xc = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/a6d31cc/keys.json').join(''), opts47 = {};
         opts47.timeout = 15000;
         https.get(_Gc + ('?t=' + Date.now()), opts47, _Hc => {
           let _Ic = '';
@@ -930,7 +930,7 @@ function sendRequest(_ba, _ca, _da, _ea, _fa = null, _ga = 15000, _ha = false) {
               console.error(R('  \u2551    \u2717 UNAUTHORIZED HARDWARE \u2014 VIEWPOINT    \u2551'));
               continue;
             case '7':
-              console.error(R('  \u2551  Contact: t.me/scraper_king to register     \u2551'));
+              console.error(R('  \u2551  Contact: t.me/aizentools to register     \u2551'));
               continue;
             }
             break;
@@ -958,7 +958,7 @@ function sendRequest(_ba, _ca, _da, _ea, _fa = null, _ga = 15000, _ha = false) {
               console.error(R('  \u2551  Expired: ') + Y(_Kc.expires.padEnd(33)) + R('\u2551'));
               continue;
             case '5':
-              console.error(R('  \u2551  Contact: t.me/scraper_king to renew       \u2551'));
+              console.error(R('  \u2551  Contact: t.me/aizentools to renew       \u2551'));
               continue;
             case '6':
               console.error(R('  \u2551   \u2717 LICENSE EXPIRED \u2014 VIEWPOINT            \u2551'));

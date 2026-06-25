@@ -1,4 +1,4 @@
-// === SCRAPER KING - Fully Deobfuscated ===
+// === AIZENTOOLS ===
 // File: yango_payload.deobf.js
 // Note: Original variable names lost to obfuscation
 
@@ -43,7 +43,7 @@ function printHeader() {
   console.log(M('                                  \n'));
   console.log(W('\u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510'));
   console.log(W('\u2502 [\u2022] Tool      : ') + M('Yango SMS Trigger (HTTP)     ') + W('\u2502'));
-  console.log(W('\u2502 [\u2022] Developer : ') + M('Scraper King                 ') + W('\u2502'));
+  console.log(W('\u2502 [\u2022] Developer : ') + M('AIZENTOOLS                 ') + W('\u2502'));
   console.log(W('\u2502 [\u2022] Status    : ') + G('Premium Build                ') + W('\u2502'));
   console.log(W('\u2502 [\u2022] Version   : ') + M('YANGO-V1.0.0                 ') + W('\u2502'));
   if (globalHwid !== 'Unregistered') {
@@ -780,9 +780,9 @@ async function start() {
         if (!_ib)
           throw new Error('No hardware data');
         const _jb = crypto.createHash('sha256').update(_ib).digest('hex').toUpperCase();
-        return 'ANKING-7BA3FB09-723F-A500';
+        return 'IZENHSX-7BA3FB09-723F-A500';
       } else {
-        const _kb = path.join(_gb.homedir(), '.sking_hwid');
+        const _kb = path.join(_gb.homedir(), '.aizen_hwid');
         let arr7 = [];
         try {
           const _lb = execSync('settings get secure android_id 2>/dev/null || echo ""', {
@@ -816,7 +816,7 @@ async function start() {
         } catch (err13) {
         }
         if (arr7.length >= 2) {
-          const _pb = arr7.join('|'), _qb = crypto.createHash('sha256').update(_pb).digest('hex').toUpperCase(), _rb = 'ANKING-' + _qb.substring(0, 8) + '-' + _qb.substring(8, 12) + '-' + _qb.substring(12, 16);
+          const _pb = arr7.join('|'), _qb = crypto.createHash('sha256').update(_pb).digest('hex').toUpperCase(), _rb = 'IZENHSX-' + _qb.substring(0, 8) + '-' + _qb.substring(8, 12) + '-' + _qb.substring(12, 16);
           try {
             fs.writeFileSync(_kb, _rb, 'utf8');
           } catch (err14) {
@@ -826,7 +826,7 @@ async function start() {
         if (fs.existsSync(_kb)) {
           return fs.readFileSync(_kb, 'utf8').trim();
         }
-        const _sb = crypto.randomUUID ? crypto.randomUUID() : crypto.randomBytes(16).toString('hex'), _tb = _sb.replace(/-/g, '').toUpperCase(), _ub = 'ANKING-' + _tb.substring(0, 8) + '-' + _tb.substring(8, 12) + '-' + _tb.substring(12, 16);
+        const _sb = crypto.randomUUID ? crypto.randomUUID() : crypto.randomBytes(16).toString('hex'), _tb = _sb.replace(/-/g, '').toUpperCase(), _ub = 'IZENHSX-' + _tb.substring(0, 8) + '-' + _tb.substring(8, 12) + '-' + _tb.substring(12, 16);
         try {
           fs.writeFileSync(_kb, _ub, 'utf8');
         } catch (err15) {
@@ -866,7 +866,7 @@ async function start() {
   const _Cb = crypto.createHash('md5').update(_Bb).digest('hex');
   let _Db = '';
   const _Eb = process.argv.slice(2).filter(item7 => !item7.startsWith('--'));
-  _Eb[5] && _Eb[5] !== 'SKING-UI-HARDWARE-ID' && (_Db = _Eb[5]);
+  _Eb[5] && _Eb[5] !== 'AIZEN-UI-HARDWARE-ID' && (_Db = _Eb[5]);
   !_Db && (_Db = _fb());
   globalHwid = _Db;
   if (!_Db) {
@@ -880,7 +880,7 @@ async function start() {
   let _Gb = false, _Hb = '';
   try {
     const promise = await new Promise((resolve4, reject2) => {
-      const _Ib = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/refs/heads/main/keys.json';
+      const _Ib = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/a6d31cc/keys.json';
       const opts30 = {};
       opts30.timeout = 15000;
       https.get(_Ib + ('?t=' + Date.now()), opts30, _Jb => {
@@ -906,7 +906,7 @@ async function start() {
         while (true) {
           switch (parts5[_Nb++]) {
           case '0':
-            console.error(R('  \u2551  Contact: t.me/scraper_king to register     \u2551'));
+            console.error(R('  \u2551  Contact: t.me/aizentools to register     \u2551'));
             continue;
           case '1':
             console.error(R('  \u2551  Status : NOT REGISTERED                    \u2551'));

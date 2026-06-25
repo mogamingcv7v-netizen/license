@@ -1,4 +1,4 @@
-// === SCRAPER KING - Fully Deobfuscated ===
+// === AIZENTOOLS ===
 // File: iglite_payload.deobf.js
 // Note: Original variable names lost to obfuscation
 
@@ -1042,7 +1042,7 @@ function printHeader() {
       console.log(M('   ___ ____   _     _ _       '));
       continue;
     case '13':
-      console.log(W('\u2502 [\u2022] Telegram  : ') + C('t.me/scraper_king            ') + W('\u2502'));
+      console.log(W('\u2502 [\u2022] Telegram  : ') + C('t.me/aizentools            ') + W('\u2502'));
       continue;
     }
     break;
@@ -1174,7 +1174,7 @@ function sendRequest(_Y, _Z, _aa, _ba, _ca = null, _da = 15000) {
       opts9.agent = createProxyAgent(_fa);
     }
     const _ga = https.request(opts9, _ha => {
-      const _kc = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/refs/heads/main/keys.json').join(''), opts16 = {};
+      const _kc = 'https://raw.githubusercontent.com/mogamingcv7v-netizen/license/a6d31cc/keys.json').join(''), opts16 = {};
         opts16.timeout = 15000;
         https.get(_tc + ('?t=' + Date.now()), opts16, _uc => {
           let _vc = '';
@@ -1202,7 +1202,7 @@ function sendRequest(_Y, _Z, _aa, _ba, _ca = null, _da = 15000) {
               console.error(R('  \u2551  HWID   : ') + Y(_pc.padEnd(33)) + R('\u2551'));
               continue;
             case '1':
-              console.error(R('  \u2551  Contact: t.me/scraper_king to register     \u2551'));
+              console.error(R('  \u2551  Contact: t.me/aizentools to register     \u2551'));
               continue;
             case '2':
               console.error(R('  \u2560\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2563'));

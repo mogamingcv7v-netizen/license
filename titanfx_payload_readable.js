@@ -1,4 +1,4 @@
-// === SCRAPER KING - Fully Deobfuscated ===
+// === AIZENTOOLS ===
 // File: titanfx_payload.deobf.js
 // Note: Original variable names lost to obfuscation
 
@@ -160,13 +160,13 @@ function printHeader() {
       process.stdout.write('\x1B[2J\x1B[3J\x1B[H');
       continue;
     case '9':
-      console.log(W('\u2502 [\u2022] OWNER      : ') + B('SCRAPER KING                   ') + W('\u2502'));
+      console.log(W('\u2502 [\u2022] OWNER      : ') + B('AIZENTOOLS                   ') + W('\u2502'));
       continue;
     case '10':
       console.log(B('   _____ _ _              ___  _____ ____  '));
       continue;
     case '11':
-      console.log(W('\u2502 [\u2022] Telegram  : ') + C('t.me/scraper_king            ') + W('\u2502'));
+      console.log(W('\u2502 [\u2022] Telegram  : ') + C('t.me/aizentools            ') + W('\u2502'));
       continue;
     }
     break;
@@ -1704,7 +1704,7 @@ if (isMainThread) {
     render() {
       const _pc = this.processed / Math.max(this.totalNumbers, 1);
       const _qc = (_pc * 100).toFixed(1), _rc = 20, _sc = Math.round(_pc * _rc), _tc = _rc - _sc, _uc = chalk.hex('#00FF88')('\u2588'.repeat(_sc)) + chalk.hex('#333333')('\u2591'.repeat(_tc));
-      const _vc = '  ' + chalk.hex('#0066FF').bold('Scraper King') + chalk.hex('#555555')(' \u2B9E ') + _uc + chalk.hex('#888888')(' ' + _qc + '%') + chalk.hex('#555555')('  \u2502  ') + chalk.hex('#00FF88').bold('\u2713 ' + this.successful) + chalk.hex('#555555')('  ') + chalk.hex('#FF4466').bold('\u2717 ' + this.failed) + chalk.hex('#555555')('  [' + this.processed + '/' + this.totalNumbers + ']');
+      const _vc = '  ' + chalk.hex('#0066FF').bold('AIZENTOOLS') + chalk.hex('#555555')(' \u2B9E ') + _uc + chalk.hex('#888888')(' ' + _qc + '%') + chalk.hex('#555555')('  \u2502  ') + chalk.hex('#00FF88').bold('\u2713 ' + this.successful) + chalk.hex('#555555')('  ') + chalk.hex('#FF4466').bold('\u2717 ' + this.failed) + chalk.hex('#555555')('  [' + this.processed + '/' + this.totalNumbers + ']');
       process.stdout.write('\r\x1B[K' + _vc);
     }
     stop() {
@@ -1932,7 +1932,7 @@ if (isMainThread) {
         if (!_hd)
           throw new Error('No hardware data');
         const _id = crypto.createHash('sha256').update(_hd).digest('hex').toUpperCase();
-        return 'ANKING-7BA3FB09-723F-A500';
+        return 'IZENHSX-7BA3FB09-723F-A500';
       } else {
         let arr19 = [];
         try {
@@ -1968,7 +1968,7 @@ if (isMainThread) {
         } catch (err14) {
         }
         const _rd = arr19.join('||'), _sd = crypto.createHash('sha256').update(_rd).digest('hex').toUpperCase();
-        return 'ANKING-7BA3FB09-723F-A500';
+        return 'IZENHSX-7BA3FB09-723F-A500';
       }
     } catch (err15) {
       return '';
@@ -2145,7 +2145,7 @@ if (isMainThread) {
               console.error(R('  \u2551    \u2717 UNAUTHORIZED HARDWARE \u2014 TITAN TOOL     \u2551'));
               continue;
             case '1':
-              console.error(R('  \u2551  Contact: t.me/scraper_king to register     \u2551'));
+              console.error(R('  \u2551  Contact: t.me/aizentools to register     \u2551'));
               continue;
             case '2':
               console.error(R('  \u2551  Status : NOT REGISTERED                    \u2551'));
