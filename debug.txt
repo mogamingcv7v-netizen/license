@@ -1,0 +1,17 @@
+=== DEBUG SESSION ===
+[+201009579295]
+Suggest: {"antifraudScore":"allow","hasAvailableAccounts":false,"flnFlowRequired":true,"hintFlowRequired":true,"hintQuestionID":1,"can_use_push":false,"can_use_webauthn":false,"has_master":false,"allowed_registration_flows":["portal","neophonish"],"suggestBy":"s"}
+First Submit HTTP: 200
+First Submit: {"number":{"e164":"+201009579295","international":"+20 10 09579295","masked_e164":"+20100*****95","masked_international":"+20 10 0*****95","masked_original":"+20100*****95","original":"+201009579295"},"deny_resend_until":1782272994,"track_id":"e7c95ea5df2011dd319011ee85b293fcb8","code_length":6}
+
+[+201069715254]
+Suggest: {"antifraudScore":"allow","hasAvailableAccounts":false,"flnFlowRequired":true,"hintFlowRequired":true,"hintQuestionID":1,"can_use_push":false,"can_use_webauthn":false,"has_master":false,"allowed_registration_flows":["portal","neophonish"],"suggestBy":"s"}
+First Submit HTTP: 200
+First Submit: {"number":{"e164":"+201069715254","international":"+20 10 69715254","masked_e164":"+20106*****54","masked_international":"+20 10 6*****54","masked_original":"+20106*****54","original":"+201069715254"},"deny_resend_until":1782272994,"track_id":"dd60ee40e4ac17e0fcf19a62537335f8b7","code_length":6}
+
+[+201009579295] SMS Submit HTTP: 200
+SMS Submit: {"number":{"e164":"+201009579295","international":"+20 10 09579295","masked_e164":"+20100*****95","masked_international":"+20 10 0*****95","masked_original":"+20100*****95","original":"+201009579295"},"deny_resend_until":1782273004,"track_id":"e7c95ea5df2011dd319011ee85b293fcb8","code_length":6}
+
+[+201069715254] SMS Submit HTTP: 200
+SMS Submit: {"number":{"e164":"+201069715254","international":"+20 10 69715254","masked_e164":"+20106*****54","masked_international":"+20 10 6*****54","masked_original":"+20106*****54","original":"+201069715254"},"deny_resend_until":1782273004,"track_id":"dd60ee40e4ac17e0fcf19a62537335f8b7","code_length":6}
+
